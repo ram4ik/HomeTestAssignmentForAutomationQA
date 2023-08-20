@@ -2,7 +2,7 @@ package com.automation.apitests.tests;
 
 import api.executor.APIExecutor;
 import com.automation.apitests.base.BaseAPITest;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class TestResources extends BaseAPITest {
 

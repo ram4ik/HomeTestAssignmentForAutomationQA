@@ -1,8 +1,8 @@
 package com.automation.apitests.base;
 
 import io.restassured.RestAssured;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 public class BaseAPITest {
     @BeforeClass

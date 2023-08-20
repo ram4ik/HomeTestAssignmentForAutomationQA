@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite thread-count="1" name="API Test Suite" verbose="1">
+    <listeners>
+        <listener class-name="com.automation.TestReporter"/>
+    </listeners>
+    <test name="Smoke Test API">
+        <classes>
+            <class name="com.automation.apitests.tests.TestResources"/>
+            <class name="com.automation.apitests.tests.TestNestedResources"/>
+        </classes>
+    </test>
+</suite>
