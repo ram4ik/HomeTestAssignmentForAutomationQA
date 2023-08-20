@@ -1,8 +1,10 @@
 package com.automation.apitests.tests;
 
+import api.endpoints.NestedApiEndpoints;
 import com.automation.apitests.base.BaseAPITest;
 import org.testng.annotations.Test;
 import api.executor.APIExecutor;
+import org.apache.http.HttpStatus;
 
 public class TestNestedResources extends BaseAPITest {
 
@@ -11,24 +13,24 @@ public class TestNestedResources extends BaseAPITest {
     @Test
     public void testPositiveGetPosts() {
         apiExecutor
-                .get("/public/v2/users/2638/posts")
+                .get(NestedApiEndpoints.USER_POSTS.getPath())
                 .then()
-                .statusCode(200);
+                .statusCode(HttpStatus.SC_OK);
     }
 
     @Test
     public void testPositiveGetComments() {
         apiExecutor
-                .get("/public/v2/posts/2638/comments")
+                .get(NestedApiEndpoints.POST_COMMENTS.getPath())
                 .then()
-                .statusCode(200);
+                .statusCode(HttpStatus.SC_OK);
     }
 
     @Test
     public void testPositiveGetTodos() {
         apiExecutor
-                .get("/public/v2/users/2638/todos")
+                .get(NestedApiEndpoints.USER_TODOS.getPath())
                 .then()
-                .statusCode(200);
+                .statusCode(HttpStatus.SC_OK);
     }
 }
