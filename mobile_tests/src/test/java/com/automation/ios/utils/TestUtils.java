@@ -1,4 +1,4 @@
-package com.automation.ios;
+package com.automation.ios.utils;
 
 import java.net.URL;
 import java.nio.file.Path;

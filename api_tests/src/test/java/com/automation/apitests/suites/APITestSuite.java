@@ -1,5 +1,7 @@
-package com.automation.apitests;
+package com.automation.apitests.suites;
 
+import com.automation.apitests.tests.TestNestedResources;
+import com.automation.apitests.tests.TestResources;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 

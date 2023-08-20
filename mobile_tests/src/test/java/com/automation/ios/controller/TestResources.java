@@ -1,8 +1,8 @@
-package com.automation.ios;
+package com.automation.ios.controller;
 
 import java.nio.file.Path;
 
-import static com.automation.ios.TestUtils.resourcePathToLocalPath;
+import static com.automation.ios.utils.TestUtils.resourcePathToLocalPath;
 
 public class TestResources {
 

@@ -1,5 +1,6 @@
-package com.automation.ios;
+package com.automation.ios.frame;
 
+import com.automation.ios.base.BaseIOS;
 import io.appium.java_client.ios.IOSDriver;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.SessionNotCreatedException;
@@ -7,9 +8,9 @@ import io.appium.java_client.ios.options.XCUITestOptions;
 
 import java.time.Duration;
 
-import static com.automation.ios.TestResources.testAppZip;
+import static com.automation.ios.controller.TestResources.testAppZip;
 
-public class AppIOSTest extends BaseIOSTest {
+public class AppIOSTest extends BaseIOS {
 
     public static final String BUNDLE_ID = "io.appium.TestApp";
 

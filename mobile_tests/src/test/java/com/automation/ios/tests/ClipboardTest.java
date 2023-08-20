@@ -1,5 +1,6 @@
-package com.automation.ios;
+package com.automation.ios.tests;
 
+import com.automation.ios.frame.AppIOSTest;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

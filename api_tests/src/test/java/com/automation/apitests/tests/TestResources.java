@@ -1,16 +1,16 @@
-package com.automation.apitests;
+package com.automation.apitests.tests;
 
+import api.executor.APIExecutor;
+import com.automation.apitests.base.BaseAPITest;
 import org.junit.Test;
-
-import static io.restassured.RestAssured.given;
 
 public class TestResources extends BaseAPITest {
 
+    private final APIExecutor apiExecutor = new APIExecutor();
+
     @Test
     public void testPositiveGetUsers() {
-        given()
-                .log().everything()
-                .when()
+        apiExecutor
                 .get("/public/v2/users")
                 .then()
                 .statusCode(200);
@@ -18,9 +18,7 @@ public class TestResources extends BaseAPITest {
 
     @Test
     public void testPositiveGetPosts() {
-        given()
-                .log().everything()
-                .when()
+        apiExecutor
                 .get("/public/v2/posts")
                 .then()
                 .statusCode(200);
@@ -28,18 +26,15 @@ public class TestResources extends BaseAPITest {
 
     @Test
     public void testPositiveGetComments() {
-        given()
-                .log().everything()
-                .when()
+        apiExecutor
                 .get("/public/v2/comments")
                 .then()
                 .statusCode(200);
     }
 
+    @Test
     public void testPositiveGetTodos() {
-        given()
-                .log().everything()
-                .when()
+        apiExecutor
                 .get("/public/v2/todos")
                 .then()
                 .statusCode(200);

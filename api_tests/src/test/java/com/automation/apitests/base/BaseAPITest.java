@@ -1,4 +1,4 @@
-package com.automation.apitests;
+package com.automation.apitests.base;
 
 import io.restassured.RestAssured;
 import org.junit.AfterClass;
