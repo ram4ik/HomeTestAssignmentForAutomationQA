@@ -11,4 +11,11 @@ public class APIExecutor {
                 .when()
                 .get(endpoint);
     }
+
+    public Response post(String endpoint) {
+        return given()
+                .log().everything()
+                .when()
+                .post(endpoint);
+    }
 }

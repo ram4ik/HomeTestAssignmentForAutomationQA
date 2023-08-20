@@ -12,4 +12,11 @@ public class APIUtils {
                 .then()
                 .statusCode(expectedStatusCode);
     }
+
+    public static void verifyForFailedStatusCode(String endpointPath, int expectedStatusCode) {
+        apiExecutor
+                .post(endpointPath)
+                .then()
+                .statusCode(expectedStatusCode);
+    }
 }
