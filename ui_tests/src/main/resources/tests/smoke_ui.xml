@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite thread-count="1" name="UI Test Suite" verbose="1">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg" />
+    </listeners>
+    <test name="Smoke UI Test">
+        <classes>
+            <class name="com.automation.tests.UiTests"/>
+        </classes>
+    </test>
+</suite>

@@ -12,6 +12,7 @@
         <module>api_tests</module>
         <module>mobile_tests</module>
         <module>shared</module>
+        <module>ui_tests</module>
     </modules>
 
     <build>
