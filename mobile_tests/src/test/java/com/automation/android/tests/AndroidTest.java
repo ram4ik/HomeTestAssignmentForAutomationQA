@@ -1,16 +1,24 @@
-package com.automation.android;
+package com.automation.android.tests;
 
+import com.automation.android.base.BaseAndroid;
 import io.appium.java_client.android.AndroidDriver;
+import managers.AppiumServerManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class AndroidTestExample {
+public class AndroidTest extends BaseAndroid {
 
-    public static void main(String[] args) throws MalformedURLException {
+    @Test
+    public void verifyAndroidApp() throws MalformedURLException {
+
+        // Start the Appium server
+        AppiumServerManager.startAppiumServer();
+
         // Set the Desired Capabilities for the Android device
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
@@ -41,6 +49,9 @@ public class AndroidTestExample {
 
         // Close the driver session
         driver.quit();
+
+        // Stop the Appium server
+        AppiumServerManager.stopAppiumServer();
     }
 }
 

@@ -57,3 +57,21 @@ directly.
 ```allure serve merged-report```
 
 ***
+
+### Mobile tests:
+
+#### For iOS tests located in : [iOS tests](mobile_tests/src/test/java/com/automation/ios/tests)
+
+Feel free to run the
+[ClipboardTest](mobile_tests/src/test/java/com/automation/ios/tests/ClipboardTest.java)
+and
+[IOSAlertTest](mobile_tests/src/test/java/com/automation/ios/tests/IOSAlertTest.java)
+directly.
+***
+
+#### For Android tests located in : [Android tests](mobile_tests/src/test/java/com/automation/android/tests)
+
+Feel free to run the
+[AndroidTest](mobile_tests/src/test/java/com/automation/android/tests/AndroidTest.java)
+directly.
+***
